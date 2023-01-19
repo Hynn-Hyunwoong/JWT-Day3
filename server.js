@@ -17,6 +17,10 @@ app.get('/', (req,res) => {
     res.render('index.html')
 });
 
+app.get('/', (req,res) => {
+    res.render("user/signup.html")
+});
+
 app.listen(3005, ()=>{
     console.log('listening on port on 3005')
 });
